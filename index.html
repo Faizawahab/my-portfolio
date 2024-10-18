@@ -7,24 +7,29 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./anima.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/2414101aec.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="nav">
-        <span>F.A.W</span>
+        <!-- <span>F.A.W</span> -->
+        <div class="icon">
+            <!-- <div> -->
+            <a href="https://linkedin.com/in/faiza-abdul-wahab" class="iconlink">
+                <i class="fa-brands fa-linkedin"></i></a>
+            <!-- </div> -->
+            <a href="https://github.com/Faizawahab"><i class="fa-brands fa-github"></i></a>
+        </div>
         <nav class="nav-items">
-            <a href="#">Home</a>
-            <a href="#">Dropdown</a>
-            <a href="#">About</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Service</a>
-            <a href="#">Resume</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#certificate">Certificate</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
     </div>
-    <section class="hero">
+    <section id="home" class="hero">
         <div class="overlay">
             <h1>I'm Faiza Abdul-Wahab
                 A Front-end Developer </h1>
@@ -33,46 +38,61 @@
     <div class="bio">
         <div class="img"> <img src="assets/20240918_132351.jpg" alt="Faiza's Picture"></div>
         <div class="progress">
-            <div>
+            <div id="about">
                 <h2 id="mybio">My Bio</h2>
-               <div class="mybiotext"> <p>With a passion for creating visually stunning and highly functional websites, Proficient in HTML,
-                CSS,
-                and JavaScript, I specialize in responsive design and modern frameworks like React and Vue.js. My
-                focus
-                is on crafting user-friendly interfaces that not only meet client requirements but also enhance user
-                experience.</p>
-            <br>
-            <p> I thrive on collaboration and communication, working closely with designers and back-end developers
-                to
-                ensure seamless integration of design and functionality. Beyond coding, I stay updated with the
-                latest
-                industry trends and best practices to continually refine my skills and contribute innovative
-                solutions.
-            </p></div>
+                <div class="mybiotext">
+                    <p>With a passion for creating visually stunning and highly functional websites, Proficient in HTML,
+                        CSS,
+                        and JavaScript, I specialize in responsive design and modern frameworks like React and Vue.js.
+                        My
+                        focus
+                        is on crafting user-friendly interfaces that not only meet client requirements but also enhance
+                        user
+                        experience.</p>
+                    <br>
+                    <p> I thrive on collaboration and communication, working closely with designers and back-end
+                        developers
+                        to
+                        ensure seamless integration of design and functionality. Beyond coding, I stay updated with the
+                        latest
+                        industry trends and best practices to continually refine my skills and contribute innovative
+                        solutions.
+                    </p>
+                </div>
             </div>
-            <div >
-
-                <div class="design"><p><label for="Design">Design</label>
-                    <progress id="Design" value="85" max="100">85% </progress></p>
+            <div>
 
 
-                 </div>
-                
-                <p><label for="HTML5">HTML5</label>
-                    <progress id="HTML5" value="98" max="100">98% </progress>
-                </p>
-                <p><label for="CSS3">CSS3</label> <progress id="CSS3" value="87" max="100%">97%</progress>
 
-                </p>
-                <p><label for="WordPress">WordPress</label>
-                    <progress id="WordPress" value="97" max="100">97%</progress>
-                </p>
-                <p><label for="Bootstrap">Bootstrap</label> <progress id="Bootstrap" value="92" max="100">92%</progress>
-                </p>
+                <div class="labels">
+                    <label for="HTML5">HTML5</label>
+                    <p>98% </p>
+                </div>
+                <progress id="HTML5" value="98" max="100"></progress>
+
+                <div class="labels">
+                    <label for="CSS3">CSS3</label>
+                    <p>97%</p>
+                </div>
+                <progress id="CSS3" value="87" max="100%"></progress>
+
+                <div class="labels">
+                    <label for="JavaScript">JavaScript</label>
+                    <p>97%</p>
+                </div>
+                <progress id="JavaScript" value="97" max="100"></progress>
+
+                <div class="labels">
+                    <label for="React">React</label>
+                    <p>92%</p>
+                </div>
+                <progress id="React" value="92" max="100"></progress>
+
             </div>
             <div class="button">
                 <button class="hire heartbeat">Hire me</button>
-                <button class="cv heartbeat">Download CV</button>
+                <a href="https://1drv.ms/w/c/794d80d3b10915d7/EVf8AgnAa4FMu8_9eHk1wZQBgqMoT0xObuS5vktCkrwKMg?e=h5nHAK"
+                    target="_blank"><button class="cv heartbeat">Download CV</button></a>
             </div>
 
 
@@ -81,48 +101,93 @@
 
 
     </div>
-    <div class="contact">
+    <hr>
+
+    <div id="certificate">
+
+        <h1 class="cert">Certifications</h1>
+        <div class="certificate">
+            <img class="forage" src="./assets/Forage.png" alt="Forage Certificate">
+            <img class="ibm" src="./assets/IBM.png" alt="IBM Certificate">
+        </div>
+
+    </div>
+    <hr>
+    <div id="projects">
+        <h2 class="cert">Projects</h2>
+
+        <div class="projects">
+            <div class="card">
+                <img src="./assets/Abaya.png" alt="Fashion-project">
+                <h3 class="fashion">Fashion Project</h3>
+                <button class="pro">
+                    <a href="https://faizawahab.github.io/fashion/">View Project</a>
+                </button>
+            </div>
+            <div class="card">
+                <img src="./assets/laptop.png" alt="Laptop-project">
+                <h3 class="fashion">Laptop Project</h3>
+                <button class="pro">
+                    <a href="https://faizawahab.github.io/fashion/">View Project</a>
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="contact" class="contact">
 
 
         <div>
 
             <h2>Contact ME</h2>
+            <form action="https://formspree.io/f/mgveeddr " method="POST">
+            
             <div class="contactme">
 
                 <label for="First Name">First Name</label>
 
-                <input type="text">
+                <input type="text" name="First Name" required >
             </div>
             <div class="last">
                 <label for="Last Name">Last Name</label>
 
-                <input type="text">
+                <input type="text" name="Last Name" required>
 
             </div>
             <div class="email">
                 <label for="Email"> Email</label>
-                <input type="text">
+                <input type="text" name="Email" required>
             </div>
             <div>
                 <label for="Message"> Message</label>
-                <input type="text">
+                <input type="text" name="Message" required>
             </div>
+            <div>
+                <button type="submit" class="send">Send</button>
+
+            </div>
+            </form>
 
 
         </div>
         <div class="icons">
             <h2>Contact INFO</h2> <br>
-            <div>
-               <div class="loc"><i class="fa-solid fa-location-pin"></i> ND-00001-5198 <br></div> 
-               <div class="con"><i class="fa-solid fa-phone"></i> 0549024854 <br></div> 
+            <div class="contactinfo">
+                <div class="loc"><i class="fa-solid fa-location-pin"></i> ND-00001-5198 <br></div>
+                <div class="con"><i class="fa-solid fa-phone"></i> 0549024854 <br></div>
                 <i class="fa-solid fa-envelope"></i> faizaabdulwahab@ymail.com
             </div>
 
 
         </div>
     </div>
-
     <footer class="footer">
+        <p>&copy;Faiza Abdul-Wahab. All Rights Reserved</p>
+    </footer>
+
+    <!-- <footer class="footer">
         <div>
             <h2>About</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex praesentium at consequuntur modi ad qui.</p>
@@ -149,7 +214,7 @@
             <i class="fa-solid fa-envelope"></i> faizaabdulwahab@ymail.com
 
         </div>
-    </footer>
+    </footer> -->
 
 </body>
 
